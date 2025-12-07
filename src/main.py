@@ -3,6 +3,7 @@ import pandas as pd
 from data_loader import load_clubelo_snapshot, load_ucl_teams   # 네가 이미 만든 모듈
 from ratings import compute_power_score
 from simulate_league import simulate_league_table
+from simulate_knockout import simulate_ucl_knockout
 
 
 def build_ucl_teams_with_elo(date_str: str, teams_csv: str) -> pd.DataFrame:
@@ -61,6 +62,28 @@ def main():
 
     print("\n=== 리그 페이즈 탈락 (25~36위) ===")
     print(eliminated[["league_pos", "team", "power"]])
+
+    # 4) 토너먼트(플레이오프~결승) 시뮬레이션
+    results = simulate_ucl_knockout(league_table)
+
+    print("\n=== [플레이오프 경기 결과] ===")
+    print(results["playoff_matches"][["team_a", "team_b", "winner"]])
+
+    print("\n=== [16강 경기 결과] ===")
+    print(results["r16_matches"][["team_a", "team_b", "winner"]])
+
+    print("\n=== [8강 경기 결과] ===")
+    print(results["qf_matches"][["team_a", "team_b", "winner"]])
+
+    print("\n=== [4강 경기 결과] ===")
+    print(results["sf_matches"][["team_a", "team_b", "winner"]])
+
+    print("\n=== [결승 경기 결과] ===")
+    print(results["final_matches"][["team_a", "team_b", "winner"]])
+
+    print("\n=== 🏆 우승팀 예측 ===")
+    champion = results["final_winner"].iloc[0]["team"]
+    print(f"Predicted Champion: {champion}")
 
 
 if __name__ == "__main__":

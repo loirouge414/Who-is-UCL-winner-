@@ -1,37 +1,37 @@
-team,country
-Paris SG,FRA
-Real Madrid,ESP
-Man City,ENG
-Bayern,GER
-Liverpool,ENG
-Inter,ITA
-Chelsea,ENG
-Dortmund,GER
-Barcelona,ESP
-Arsenal,ENG
-Leverkusen,GER
-Atletico,ESP
-Benfica,POR
-Atalanta,ITA
-Villarreal,ESP
-Juventus,ITA
-Frankfurt,GER
-Brugge,BEL
-Tottenham,ENG
-PSV,NLD
-Ajax,NLD
-Napoli,ITA
-Sporting,POR
-Olympiakos,GRE
-Slavia Praha,CZE
-Bodoe Glimt,NOR
-Marseille,FRA
-Monaco,FRA
-Galatasaray,TUR
-St Gillis,BEL
-FC Kobenhavn,DEN
-Karabakh Agdam,AZE
-Kairat,KAZ
-Bilbao,ESP
-Newcastle,ENG
-Paphos, CYP
+team,elo_club_name,country
+Paris Saint-Germain FC,Paris SG,FRA
+Real Madrid CF,Real Madrid,ESP
+Manchester City FC,Man City,ENG
+FC Bayern München,Bayern,GER
+Liverpoop FC,Liverpool,ENG
+FC Internazionale Milano,Inter,ITA
+Chelsea FC,Chelsea,ENG
+Borussia Dortmund,Dortmund,GER
+FC Barcelona,Barcelona,ESP
+Arsenal FC,Arsenal,ENG
+Bayer 04 Leverkusen,Leverkusen,GER
+Atlético de Madrid,Atletico,ESP
+SL Benfica,Benfica,POR
+Atalanta BC,Atalanta,ITA
+Villarreal CF,Villarreal,ESP
+Juventus FC,Juventus,ITA
+Eintracht Frankfurt,Frankfurt,GER
+Club Brugge KV,Brugge,BEL
+Tottenham Hotspur FC,Tottenham,ENG
+PSV Eindhoven,PSV,NLD
+AFC Ajax,Ajax,NLD
+SSC Napoli,Napoli,ITA
+Sporting CP,Sporting,POR
+Olympiacos FC,Olympiakos,GRE
+SK Slavia Praha,Slavia Praha,CZE
+FK Bodø/Glimt,Bodoe Glimt,NOR
+Olympique de Marseille,Marseille,FRA
+AS Monaco FC,Monaco,FRA
+Galatasaray SK,Galatasaray,TUR
+Royale Union Saint-Gilloise,St Gillis,BEL
+FC København,FC Kobenhavn,DEN
+Qarabağ FK,Karabakh Agdam,AZE
+FC Kairat,Kairat,KAZ
+Athletic Club,Bilbao,ESP
+Newcastle United FC,Newcastle,ENG
+Pafos FC,Paphos, CYP

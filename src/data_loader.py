@@ -20,7 +20,12 @@ if __name__ == "__main__":
     elo_df = load_clubelo_snapshot("2025-09-01")
     ucl_df = load_ucl_teams("data/ucl_teams_2025_26.csv")
 
-    merged = ucl_df.merge(elo_df, left_on="team", right_on="Club", how="left")
+    merged = ucl_df.merge(
+        elo_df,
+        left_on="elo_club_name",
+        right_on="Club",
+        how="left"
+    )
 
     pd.set_option("display.max_rows", None)
     print(merged)
